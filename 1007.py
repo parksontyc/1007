@@ -14,3 +14,15 @@ if age >= 18:
     print("可以投票")
 else:
     print("不能投票")
+
+# else if
+age = input("請輸入年紀： ")
+age = int(age)
+if age < 13:
+    print('去國小')
+elif age >= 13 and age < 17:
+    print("去國中")
+elif age >= 17 and age < 22:
+    print("去大學")
+else:
+    print("去出社會")
