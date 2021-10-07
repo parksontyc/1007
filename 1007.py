@@ -4,3 +4,13 @@ c_temp = input("請輸入溫度：")
 c_temp = int(c_temp)
 f_temp = c_temp * 9/5 +32
 print("華氏溫度為", f_temp)
+
+# input、casting、 if else
+
+age = input("請輸入年齡： ")
+age = int(age)
+
+if age >= 18:
+    print("可以投票")
+else:
+    print("不能投票")
