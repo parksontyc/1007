@@ -64,11 +64,11 @@
 # 不對的話，印出"密碼錯誤，還有__次機會"
 # 對的話，印出"登入成功"
 
-password = "cc25628888"
+password = "cc1234"
 x = 3
 while True:
     password = input("請輸入密碼：")
-    if password == "cc25628888":
+    if password == "cc1234":
         print("登入成功！")
         break
     else:
