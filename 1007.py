@@ -64,16 +64,37 @@
 # 不對的話，印出"密碼錯誤，還有__次機會"
 # 對的話，印出"登入成功"
 
-password = "cc1234"
-x = 3
+# password = "cc1234"
+# x = 3 # 可以試試以x當while條件
+# while True:
+#     password = input("請輸入密碼：")
+#     if password == "cc1234":
+#         print("登入成功！")
+#         break
+#     else:
+#         x = x - 1
+#         print("密碼錯誤，你還有", x, "次的機會")
+#         if x == 0:
+#             print("你沒有機會了")
+#             break
+
+# import
+
+import random
+num = random.randint(1, 100)
+x = 5
 while True:
-    password = input("請輸入密碼：")
-    if password == "cc1234":
-        print("登入成功！")
+    your_num = input("請輸入密碼: ")
+    x -= 1
+    your_num = int(your_num)
+    if your_num == num:
+        print("答對")
         break
-    else:
-        x = x - 1
-        print("密碼錯誤，你還有", x, "次的機會")
-        if x == 0:
-            print("你沒有機會了")
-            break
+    elif your_num < num:
+        print("比答案小")
+        if x < 0:
+            print("是要猜多久啦")
+    elif your_num > num:
+        print("比答案大")
+        if x < 0:
+            print("啊是好了沒")
