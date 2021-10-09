@@ -81,7 +81,11 @@
 # import
 
 import random
-num = random.randint(1, 100)
+a = input("請輸入最小值: ")
+a = int(a)
+b = input("請輸入最大值: ")
+b = int(b)
+num = random.randint(a, b)
 x = 5
 while True:
     your_num = input("請輸入密碼: ")
